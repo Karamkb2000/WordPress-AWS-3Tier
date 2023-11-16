@@ -16,7 +16,6 @@ variable "dns_hostnames" {
 
 }
 
-
 variable "dns_support" {
   type    = bool
   default = true
