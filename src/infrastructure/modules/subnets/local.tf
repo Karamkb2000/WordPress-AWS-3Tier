@@ -1,3 +1,5 @@
+# This Terraform script defines a set of subnets for a three-tier architecture (public and private subnets).
+
 locals {
   subnets = {
     "wordpress_subnet_public-1" = {

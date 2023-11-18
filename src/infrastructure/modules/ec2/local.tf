@@ -1,3 +1,7 @@
+/*
+efines a map named nodes that captures information about different EC2 instances (nodes) in your architecture.
+*/
+
 locals {
   nodes = {
     node_1_bastion = {
@@ -25,6 +29,8 @@ locals {
     },
   }
 }
+
+#constructs a base URL pointing to the location of configuration files 
 
 locals {
   baseurl = "${path.module}/../../../config/"

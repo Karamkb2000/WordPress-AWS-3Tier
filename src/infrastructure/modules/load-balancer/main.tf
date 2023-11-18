@@ -1,3 +1,8 @@
+/*
+sets up an ALB, a Target Group, and a listener to route incoming HTTP traffic to the specified Target Group.
+to distribute web application traffic across multiple instances
+*/
+
 # create alb
 
 resource "aws_lb" "wordpress_alb" {

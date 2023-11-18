@@ -1,3 +1,9 @@
+/*
+sets up route tables for public and private subnets, defines default routes, and associates 
+the route tables with the appropriate subnets. It also captures relevant information using 
+local variables for better organization and maintenance.
+*/
+
 resource "aws_route_table" "wordpress_private_rt" {
   for_each = local.route_tables
   vpc_id   = var.vpc_id

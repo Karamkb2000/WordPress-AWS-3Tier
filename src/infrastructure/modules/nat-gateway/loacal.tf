@@ -1,3 +1,8 @@
+/*
+sets up Elastic IPs and NAT Gateways in AWS. The Elastic IPs are created with VPC settings and tags, while the NAT Gateways are associated with specific 
+Elastic IPs, subnets, and tags. This structure organizes the code and captures relevant information locally for ease of maintenance and readability.
+*/
+
 locals {
   elastic_ips = {
     eip1 = {

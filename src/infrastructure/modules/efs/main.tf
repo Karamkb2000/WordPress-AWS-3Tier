@@ -1,3 +1,8 @@
+/*
+This setup ensures that your WordPress instances in private_3 and private_4 
+subnets can mount the EFS file system for shared storage. 
+*/
+
 resource "aws_efs_file_system" "wordpress_efs" {
   encrypted = false
   lifecycle_policy {

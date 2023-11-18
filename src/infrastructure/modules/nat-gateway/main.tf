@@ -1,3 +1,5 @@
+
+
 resource "aws_eip" "wordpress_eip" {
   for_each = local.elastic_ips
   vpc      = true

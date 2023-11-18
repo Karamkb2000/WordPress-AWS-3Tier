@@ -1,3 +1,17 @@
+# Main Configuration (main.tf)
+
+/*
+- This Terraform configuration is organized into modules, each responsible for specific AWS resources.
+
+- The modules are structured to create and manage VPC, subnets, internet gateways, NAT gateways, route tables,
+  security groups, database, EFS, EC2 instances, ALB, and CloudWatch.
+
+- The providers.tf file defines the required AWS provider configuration.
+
+- Variables and outputs for each module are defined in their respective module directories.
+
+*/
+
 module "vpc_module" {
   source = "./modules/vpc"
 }

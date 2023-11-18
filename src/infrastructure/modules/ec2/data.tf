@@ -1,3 +1,6 @@
+/*
+looks for the most recent Amazon Linux 2 AMI with a specific name and kernel version
+*/
 
 data "aws_ami" "wordpress_ami" {
 

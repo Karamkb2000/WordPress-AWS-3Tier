@@ -1,3 +1,9 @@
+/* 
+Autoscaling policies adjust the size of the Auto Scaling group based on the specified conditions.
+CloudWatch metric alarms monitor key metrics and trigger actions when thresholds are breached.
+These resource work together to ensure the application scales up or down based on demand and maintains performance and availability.
+*/
+
 resource "aws_autoscaling_policy" "scale_up" {
   name                   = "scale-up"
   scaling_adjustment     = 1

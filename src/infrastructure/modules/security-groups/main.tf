@@ -1,3 +1,6 @@
+# Define Security Groups for Load Balancer, Web Server, Database, EFS, and SSH
+
+
 resource "aws_security_group" "load_balancer_sg" {
   name        = "lb_sg"
   description = "public facing load balancer security group"

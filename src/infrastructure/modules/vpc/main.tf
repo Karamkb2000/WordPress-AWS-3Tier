@@ -1,4 +1,4 @@
-# Create AWS VPC resource using the local variable configurations
+# creates an AWS VPC named "wordpress_vpc" with a specified CIDR block, DNS hostnames, and DNS support.
 
 resource "aws_vpc" "vpcs" {
   for_each             = local.vpcs

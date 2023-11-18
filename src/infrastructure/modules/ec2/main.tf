@@ -1,3 +1,12 @@
+/*
+set up an EC2 instance for the bastion host, launch configuration for private instances, and an Auto Scaling Group for the WordPress instances.
+The user_data sections include scripts for setting up LAMP stack, WordPress, mounting EFS, configuring RDS, and Apache on the instances.
+The Auto Scaling Group ensures that the number of instances scales between the specified minimum and maximum sizes based on demand.
+Tags, security groups, and other configurations are applied to ensure proper setup and communication.
+*/
+
+
+
 resource "aws_key_pair" "wordpress_key_private" {
   key_name   = "wordpress_key"
   public_key = file("~/.ssh/wp_key.pub")

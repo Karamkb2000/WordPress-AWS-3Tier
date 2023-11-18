@@ -1,3 +1,5 @@
+#Defines local variables for subnet IDs, NAT IDs, and route table names.
+
 locals {
   subnet_ids = {
     "private_subnet_ids-1" = [var.subnet_ids.private_1, var.subnet_ids.private_3]
