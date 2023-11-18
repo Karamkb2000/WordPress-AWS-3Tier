@@ -1,3 +1,4 @@
+# Define local variables for VPC configurations
 locals {
   vpcs = {
     wordpress_vpc = {

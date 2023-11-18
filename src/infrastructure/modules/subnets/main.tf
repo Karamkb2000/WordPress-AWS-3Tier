@@ -4,6 +4,6 @@ resource "aws_subnet" "subnets" {
   map_public_ip_on_launch = each.value.map_public_ip_on_launch
   availability_zone       = each.value.availability_zone
   tags                    = each.value.tags
-  vpc_id = var.vpc_id
+  vpc_id                  = var.vpc_id
 
 }

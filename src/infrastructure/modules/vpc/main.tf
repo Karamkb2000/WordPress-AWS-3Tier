@@ -1,3 +1,5 @@
+# Create AWS VPC resource using the local variable configurations
+
 resource "aws_vpc" "vpcs" {
   for_each             = local.vpcs
   cidr_block           = each.value.cidr_block
