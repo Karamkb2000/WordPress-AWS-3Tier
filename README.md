@@ -38,7 +38,7 @@ This project utilizes several AWS services:
 
 The 3-tier architecture consists of a web layer, an application layer, and a database layer. Terraform provisions components such as a VPC, subnets, security groups, EC2 instances, an RDS instance, an EFS file system, and an ALB to create a scalable and highly available infrastructure for hosting the WordPress application.
 
-![AWS 3-Tier Architecture](https://github.com/Karamkb2000/WordPress-AWS-3Tier/assets/104793458/c3582f0f-f460-487b-9837-2db7b01f03c7)
+![AWS-3Tier-Architecture](https://github.com/Karamkb2000/WordPress-AWS-3Tier/assets/104793458/b47c1288-2cad-454a-964e-95543bc1f654)
 
 ### Workflow:
 
