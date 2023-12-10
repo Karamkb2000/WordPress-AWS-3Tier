@@ -99,7 +99,7 @@ The 3-tier architecture consists of a web layer, an application layer, and a dat
 
 To provision the infrastructure on AWS:
 
-1. Clone this repository: `git clone git@github.com:Karamkb2000/WordPress-AWS-3Tier.git`
+1. Clone this repository: `git clone https://github.com/Karamkb2000/WordPress-AWS-3Tier.git
 2. Navigate to the project directory: `cd WordPress-AWS-3Tier/src/infrastructure/`
 3. Initialize Terraform: `terraform init`
 4. Create a `terraform.tfvars` file with your AWS credentials and variables.
