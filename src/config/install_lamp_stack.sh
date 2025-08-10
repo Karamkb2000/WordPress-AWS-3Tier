@@ -5,7 +5,9 @@
 # Install Apache
 sudo su
 sudo yum update -y
-sudo yum install -y httpd httpd-tools mod_ssl
+if ! rpm -q httpd >/dev/null 2>&1; then
+  sudo yum install -y httpd httpd-tools mod_ssl
+fi
 sudo systemctl enable httpd 
 sudo systemctl start httpd
 
@@ -24,7 +26,10 @@ sudo yum install php-mbstring php-xml php-gd -y
 
 
 
-sudo systemctl restart httpd
+if ! systemctl is-active --quiet httpd; then
+  sudo systemctl start httpd
+fi
+
 sudo systemctl restart php-fpm
 
 

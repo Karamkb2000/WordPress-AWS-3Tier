@@ -1,8 +1,12 @@
 #!/bin/bash
 
 sudo su
-curl -O https://wordpress.org/latest.tar.gz
-tar -xzf latest.tar.gz
+if [ ! -d "/tmp/wordpress" ]; then
+  cd /tmp
+  curl -O https://wordpress.org/latest.tar.gz
+  tar -xzf latest.tar.gz
+fi
+
 
 
 
