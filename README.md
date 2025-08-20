@@ -1,4 +1,4 @@
-# AWS To Host WordPress using Terraform
+# AWS To Host WordPress using (Terraform)
 
 This repository contains Terraform configurations for provisioning a scalable 3-tier architecture on AWS to host a WordPress application.
 
